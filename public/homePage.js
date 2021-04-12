@@ -68,7 +68,7 @@ favoritesWidget.addUserCallback = (data) => {
       moneyManager.updateUsersList(result.data);
       return;
     }
-    favoritesWidget.setMessage(result.success, result.error);
+    return favoritesWidget.setMessage(result.success, result.error);
   });
 };
 
@@ -80,6 +80,6 @@ favoritesWidget.removeUserCallback = (data) => {
       moneyManager.updateUsersList(result.data);
       return;
     }
-    favoritesWidget.setMessage(result.success, result.error);
+    return favoritesWidget.setMessage(result.success, result.error);
   });
 };
